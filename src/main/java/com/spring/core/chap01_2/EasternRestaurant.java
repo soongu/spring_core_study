@@ -1,13 +1,13 @@
-package com.spring.core.chap01_1;
+package com.spring.core.chap01_2;
 
 public class EasternRestaurant implements Restaurant {
 
     private Chef chef;
     private Course course;
 
-    public EasternRestaurant() {
-        this.chef = new KimuraChef();
-        this.course = new SushiCourse();
+    public EasternRestaurant(Chef chef, Course course) {
+        this.chef = chef;
+        this.course = course;
     }
 
     @Override

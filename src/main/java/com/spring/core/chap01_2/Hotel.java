@@ -1,13 +1,13 @@
-package com.spring.core.chap01_1;
+package com.spring.core.chap01_2;
 
 public class Hotel {
 
     private Restaurant restaurant;
     private Chef headChef;
 
-    public Hotel() {
-        this.restaurant = new EasternRestaurant();
-        this.headChef = new KimuraChef();
+    public Hotel(Restaurant restaurant, Chef headChef) {
+        this.restaurant = restaurant;
+        this.headChef = headChef;
     }
 
     public void inform() {

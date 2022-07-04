@@ -5,6 +5,11 @@ public class WesternRestaurant implements Restaurant {
     private Chef chef;
     private Course course;
 
+    public WesternRestaurant() {
+        this.chef = new JuanChef();
+        this.course = new FrenchCourse();
+    }
+
     @Override
     public void reserve() {
         course.combineMenu();
