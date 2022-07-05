@@ -1,5 +1,8 @@
 package com.spring.core.chap03.computer;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class LogitecMouse implements Mouse {
     @Override
     public void info() {

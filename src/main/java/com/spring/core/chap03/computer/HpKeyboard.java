@@ -1,5 +1,8 @@
 package com.spring.core.chap03.computer;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class HpKeyboard implements Keyboard {
     @Override
     public void info() {
