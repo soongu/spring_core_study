@@ -13,12 +13,18 @@ public class HotelConfig {
     public Chef chef() {
         return new KimuraChef();
     }
-    @Bean
+    @Bean(name = "sc")
     public Course sushiCourse() {
         return new SushiCourse();
     }
 
-    @Bean
+    @Bean(name = "fc")
+    public Course frenchCourse() {
+        return new FrenchCourse();
+    }
+
+
+    @Bean(name = "res") // 빈 이름 짓기 안 지으면 메서드명을 자동으로 설정
     public Restaurant restaurant() {
         // 생성자 주입 (constructor injection)
 //        EasternRestaurant er
