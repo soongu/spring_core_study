@@ -1,8 +1,6 @@
 package com.spring.core.chap02;
 
-import lombok.Builder;
-
-@Builder
+// 자동 빈 등록
 public class Hotel {
 
     private Restaurant restaurant;

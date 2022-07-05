@@ -1,4 +1,4 @@
-package com.spring.core.chap02;
+package com.spring.core.chap03;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -6,6 +6,7 @@ import lombok.Setter;
 import org.springframework.stereotype.Component;
 
 @NoArgsConstructor @Setter @Getter
+@Component
 public class WesternRestaurant implements Restaurant {
 
     private Chef chef;
